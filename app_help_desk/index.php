@@ -1,6 +1,3 @@
-
-
-
 <html>
   <head>
     <meta charset="utf-8" />
@@ -49,6 +46,15 @@
                     Usuário ou senha Inválido(s)
                 </div>
                 <? }?>
+
+                <? if(isset($_GET['login']) && $_GET['login'] == 'erro2'){?>
+
+                <div class="text-danger">
+                    Faça Login para acessar as Páginas
+                </div>
+                <? }?>
+
+                
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>
             </div>
